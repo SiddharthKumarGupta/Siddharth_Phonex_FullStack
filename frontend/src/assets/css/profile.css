@@ -1,0 +1,489 @@
+/* =====================================================
+   PROFILE PAGE
+===================================================== */
+
+.profile-page {
+    min-height: 80vh;
+    background: #f5f7fb;
+    padding: 50px 20px;
+    color: #222;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.profile-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   PROFILE HEADER
+===================================================== */
+
+.profile-header {
+    background: linear-gradient(
+        135deg,
+        #1e3c72,
+        #2a5298
+    );
+
+    color: white;
+    padding: 35px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: white;
+    color: #1e3c72;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.profile-header-info {
+    flex: 1;
+}
+
+.profile-header-info h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    color: white;
+}
+
+.profile-header-info p {
+    margin: 0;
+    color: white;
+    opacity: 0.85;
+}
+
+.edit-profile-btn {
+    border: none;
+    background: white;
+    color: #1e3c72;
+
+    padding: 12px 18px;
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PROFILE STATS
+===================================================== */
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.profile-stat-card {
+    background: white;
+    padding: 25px;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    text-decoration: none;
+    color: #222;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s ease;
+}
+
+.profile-stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-stat-card > svg {
+    font-size: 30px;
+    color: #1769ff;
+}
+
+.profile-stat-card h3 {
+    margin: 0 0 5px;
+    color: #222;
+}
+
+.profile-stat-card p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* =====================================================
+   PROFILE CONTENT
+===================================================== */
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 25px;
+}
+
+.profile-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 18px;
+
+    color: #222;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.profile-card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.profile-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-edit-btn {
+    border: none;
+
+    background: #eef4ff;
+    color: #1769ff;
+
+    padding: 8px 14px;
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PROFILE DETAILS
+===================================================== */
+
+.profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.profile-detail {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.profile-detail > svg {
+    color: #1769ff;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.profile-detail span {
+    display: block;
+
+    color: #888;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.profile-detail strong {
+    display: block;
+
+    font-size: 15px;
+
+    color: #222;
+}
+
+
+/* =====================================================
+   ACCOUNT SETTINGS
+===================================================== */
+
+.account-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.account-actions a,
+.account-actions button {
+    border: none;
+
+    background: #f6f8fc;
+
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: #333 !important;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* ACCOUNT ICONS */
+
+.account-actions a svg,
+.account-actions button svg {
+    color: #1769ff;
+}
+
+
+/* ACCOUNT ACTION HOVER */
+
+.account-actions a:hover,
+.account-actions button:hover {
+    background: #eaf1ff;
+
+    color: #1769ff !important;
+
+    transform: translateX(3px);
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.logout-action {
+    color: #e63946 !important;
+}
+
+.logout-action svg {
+    color: #e63946 !important;
+}
+
+.logout-action:hover {
+    background: #fff0f1 !important;
+    color: #d62839 !important;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark .profile-page {
+    background: #121212;
+    color: white;
+}
+
+
+/* PROFILE STATS */
+
+body.dark .profile-stat-card {
+    background: #1e1e1e;
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+body.dark .profile-stat-card h3 {
+    color: white;
+}
+
+body.dark .profile-stat-card p {
+    color: #bdbdbd;
+}
+
+
+/* PROFILE CARD */
+
+body.dark .profile-card {
+    background: #1e1e1e;
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+body.dark .profile-card h2 {
+    color: white;
+}
+
+
+/* PROFILE DETAILS */
+
+body.dark .profile-detail span {
+    color: #aaaaaa;
+}
+
+body.dark .profile-detail strong {
+    color: white;
+}
+
+
+/* =====================================================
+   ACCOUNT SETTINGS - DARK MODE
+===================================================== */
+
+/* My Orders
+   Shopping Cart
+   Wishlist
+*/
+
+body.dark .account-actions a,
+body.dark .account-actions button {
+    background: #2a2a2a;
+
+    color: white !important;
+}
+
+
+/* ICONS */
+
+body.dark .account-actions a svg,
+body.dark .account-actions button svg {
+    color: white;
+}
+
+
+/* HOVER */
+
+body.dark .account-actions a:hover,
+body.dark .account-actions button:hover {
+    background: #333333;
+
+    color: white !important;
+}
+
+
+/* =====================================================
+   LOGOUT - DARK MODE
+===================================================== */
+
+body.dark .logout-action {
+    color: #ff6b75 !important;
+}
+
+body.dark .logout-action svg {
+    color: #ff6b75 !important;
+}
+
+body.dark .logout-action:hover {
+    background: #3a2024 !important;
+
+    color: #ff858d !important;
+}
+
+
+/* =====================================================
+   EDIT BUTTON - DARK MODE
+===================================================== */
+
+body.dark .small-edit-btn {
+    background: #263b61;
+    color: #6fa0ff;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edit-profile-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .profile-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .profile-page {
+        padding: 30px 15px;
+    }
+
+    .profile-header {
+        padding: 25px 20px;
+    }
+
+    .profile-header-info h1 {
+        font-size: 24px;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    .profile-stat-card {
+        padding: 20px;
+    }
+}

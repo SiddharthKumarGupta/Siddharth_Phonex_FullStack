@@ -1,0 +1,228 @@
+.hero{
+    position:relative;
+    width:100%;
+    height:90vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:1s;
+}
+
+.hero:hover .hero-image{
+    transform:scale(1.08);
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.70)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+
+    max-width:700px;
+
+    text-align:center;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:white;
+
+    animation:fadeUp 1.2s ease;
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:#ffffff22;
+
+    border:1px solid rgba(255,255,255,.3);
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+}
+
+.hero-content h1{
+
+    font-size:72px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.hero-tagline{
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+    opacity:.95;
+}
+
+.hero-offer{
+
+    font-size:22px;
+
+    color:#ddd;
+
+    margin-bottom:45px;
+}
+
+.hero-offer span{
+
+    margin:0 18px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+}
+
+.cart-btn{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.cart-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#0057d8;
+
+    box-shadow:0 20px 35px rgba(0,90,255,.4);
+}
+
+.learn-btn{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid white;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    transition:.4s;
+}
+
+.learn-btn:hover{
+
+    background:white;
+
+    color:black;
+
+    transform:translateY(-5px);
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:992px){
+
+.hero{
+
+height:75vh;
+
+}
+
+.hero-content{
+
+padding:40px;
+
+width:90%;
+
+}
+
+.hero-content h1{
+
+font-size:48px;
+
+}
+
+.hero-tagline{
+
+font-size:22px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.cart-btn,
+
+.learn-btn{
+
+width:100%;
+
+}
+
+}

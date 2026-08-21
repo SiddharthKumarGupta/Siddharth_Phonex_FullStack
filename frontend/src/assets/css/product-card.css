@@ -1,0 +1,169 @@
+.product-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 440px;
+
+  padding: 18px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Product image */
+.product-card > img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: contain;
+
+  display: block;
+  margin: 20px auto 15px;
+}
+
+/* Discount */
+.discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  background: #ef4444;
+  color: white;
+
+  padding: 5px 9px;
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Wishlist */
+.wishlist {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f3f4f6;
+
+  cursor: pointer;
+}
+
+.wishlist-active {
+  color: red;
+}
+
+/* Category */
+.category {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin: 5px 0;
+
+  color: #777;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+/* Name */
+.product-card h3 {
+  margin: 6px 0;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Brand */
+.brand {
+  margin: 3px 0;
+
+  color: #666;
+  font-size: 14px;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  margin: 8px 0;
+
+  color: #f59e0b;
+  font-size: 14px;
+}
+
+.rating span {
+  margin-left: 5px;
+  color: #777;
+  font-size: 12px;
+}
+
+/* Price */
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 8px 0 15px;
+}
+
+.new-price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+/* Cart button */
+.cart-btn {
+  width: 100%;
+
+  margin-top: auto;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #facc15;
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background: #eab308;
+}
+
+.cart-btn:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
